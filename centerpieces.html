@@ -157,6 +157,12 @@ $(document).ready(function() {
 	  type:'image',
 	  gallery: {
 		enabled: true
+	  },
+	  image: {
+		// caption source
+		titleSrc: function(item) {
+  			return item.el.find("p").text();
+  		}
 	  }
   });
 });
