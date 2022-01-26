@@ -22,6 +22,7 @@
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/gallery.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 	<!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 	<!-- InstanceParam name="show-gallery" type="boolean" value="false" -->
@@ -32,7 +33,6 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-JM1EXP0RK3');
 	</script>
 	<!-- End Google Analytics -->
@@ -132,9 +132,7 @@
 		</div>
 
 	</div>
-
-	
-	
+</body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -142,5 +140,15 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.thumbnail').magnificPopup({
+	  type:'image',
+	  gallery: {
+		enabled: true
+	  }
+  });
+});
+</script>
 <!-- InstanceEnd --></html>
